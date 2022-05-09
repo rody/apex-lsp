@@ -20,6 +20,7 @@
 ;;  The server jar can be downloaded at https://github.com/forcedotcom/salesforcedx-vscode/raw/develop/packages/salesforcedx-vscode-apex/out/apex-jorje-lsp.jar
 ;;
 ;;; Code:
+;;;
 
 (require 'lsp-mode)
 (require 'f)
@@ -28,7 +29,7 @@
 
 (defcustom lsp-apex-jar-file
   (f-join lsp-server-install-dir "apex-jorje" lsp-apex-jar-name)
-  "Xml server jar command."
+  "Apex LSP server jar command."
   :type 'string
   :group 'lsp-apex
   :type 'file)
